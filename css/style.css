@@ -1,0 +1,109 @@
+/*declarar variavel - invés de mudar tudo, só adc a variavel*/ 
+:root{
+    --vermelho:#E50914e8;
+    --preta:#141414;
+}
+
+/* resetar toda a página antes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos básicos */
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /*espaçamento de um para outro */
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px; /*espaçamento de uma palavra para outra */
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*anime-principal*/
+.anime-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/capa-equipe-naruto.jpg');
+    
+    height: 400px; /* 600px; */
+    background-size: cover; /* preencher a página toda com a imagem */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /*começar da esquerda para direita */
+}
+
+.anime-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.anime-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.anime-principal .botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px; /*espaço interno do elemento, primeiro valor( cima e baixo ), segundo valor (esquerda e direita) */
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*ponteiro no botão */
+    transition: .30s ease all; /*tempo da animação */
+}
+
+.anime-principal .botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.anime-principal .botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.anime-principal .container{
+    width: 60%;
+}
+
+.box-anime{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carrossel-animes{
+    margin-top: 5px;
+}
